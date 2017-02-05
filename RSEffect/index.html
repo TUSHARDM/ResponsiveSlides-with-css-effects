@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Slider with effect from RS slider</title>
+<link rel="stylesheet" href="css/reset.css">
+</head>
+<div class="banner">
+  <div class="rslides_container">
+    <ul class="rslides" id="slider1">
+      <li><img src="images/banner1.jpg" alt="">
+        <div class="leftside">
+          <h2>Neque porro quisquam est qui</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+        <div class="rightside tp-caption"><a href="#.">Read More</a></div>
+        <div class="topimg"><img src="images/tagimg1.png"></div>
+      </li>
+      <li><img src="images/banner2.jpg" alt="">
+        <div class="leftside">
+          <h2>eget volutpat quam dictum.</h2>
+          <p>Maecenas ut sagittis lectus. Nulla nec tortor fringilla, efficitur ex eu, dignissim lectus. Morbi ac dolor dictum,</p>
+        </div>
+        <div class="rightside tp-caption"><a href="#.">Read More</a></div>
+        <div class="topimg"><img src="images/tagimg2.png"></div>
+      </li>
+      <li><img src="images/banner3.jpg" alt="">
+        <div class="leftside">
+          <h2>Neque porro quisquam est qui</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+        <div class="rightside tp-caption"><a href="#.">Read More</a></div>
+        <div class="topimg"><img src="images/tagimg3.png"></div>
+      </li>
+      <li><img src="images/banner4.jpg" alt="">
+        <div class="leftside">
+          <h2>eget volutpat quam dictum.</h2>
+          <p>Maecenas ut sagittis lectus. Nulla nec tortor fringilla, efficitur ex eu, dignissim lectus. Morbi ac dolor dictum,</p>
+        </div>
+        <div class="rightside tp-caption"><a href="#.">Read More</a></div>
+        <div class="topimg"><img src="images/tagimg4.png"></div>
+      </li>
+    </ul>
+  </div>
+  <div class="clear"></div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/responsiveslides.min.js"></script>
+<script>
+    $(function () {
+      $("#slider1").responsiveSlides({
+        auto: true,
+        pager: true,
+        nav: true,
+        speed: 500,
+        namespace: "transparent-btns"
+      });
+    });
+</script>
+<body>
+</body>
+</html>

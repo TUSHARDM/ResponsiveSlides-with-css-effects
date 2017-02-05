@@ -1,0 +1,155 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* HTML5 display definitions
+========================================================================== */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline;
+*zoom: 1;
+}
+audio:not([controls]) {
+display: none;
+}
+[hidden] {
+display: none;
+}
+/* Base
+========================================================================*/
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; }
+html, button, input, select, textarea { font-family: sans-serif; color: #222; }
+body { margin: 0; font-size: 1em; line-height: 1.6; }
+::-moz-selection {
+background: #e31e24;
+color: #fff;
+text-shadow: none;
+}
+::selection {
+background: #e31e24;
+color: #fff;
+text-shadow: none;
+}
+/* GLOBAL RESETS
+========================================================================*/
+* { padding:0; margin:0; }
+h1, h2, h3, h4, h5, h6 { font-size:100%; font-weight:normal; }
+ol, ul { list-style:none }
+a { color: #0066CC; text-decoration: none; }
+a:hover { color: #8dc641; text-decoration: none }
+:focus, a:focus { outline:none; }
+:active, a:active { outline:none; }
+:focus { -moz-outline-style:none; }
+*, *::before, *::after {
+box-sizing: border-box;
+}
+ input:focus::-webkit-input-placeholder {
+color:transparent;
+}
+input:focus:-moz-placeholder {
+color:transparent;
+} /* FF 4-18 */
+input:focus::-moz-placeholder {
+color:transparent;
+} /* FF 19+ */
+input:focus:-ms-input-placeholder {
+color:transparent;
+} /* IE 10+ */
+/* TABLE
+========================================================================*/
+table { border-collapse:collapse; border-spacing:0 }
+th, td, caption { font-weight: normal; vertical-align: top; text-align: left; }
+/* IMAGES
+========================================================================*/
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; max-width:100%; }
+svg:not(:root) {
+overflow: hidden;
+}
+img.flLeft { margin-right:15px; }
+img.flRight { margin-left:15px; }
+iframe { width:100%; }
+/* POSITION ABSOLUTE
+========================================================================*/
+.absolute { position:absolute }
+.absoluted > * { position:absolute }
+/* POSITION RELATIVE
+========================================================================*/
+.rel { position:relative }
+/* GLOBAL FLOAT
+========================================================================*/
+.flLeft { float:left; }
+.flRight { float:right; }
+/* CLEAR FLOAT
+========================================================================*/
+.clearfix:after { content:"\0020"; display:block; height:0; clear:both; visibility:hidden; overflow:hidden }
+.clear { clear:both; padding:0; margin:0; overflow:hidden; height:0 }
+/* DISPLAY INLINE
+========================================================================*/
+.inline { display:inline }
+/* DEFAULT FORM STYLING
+========================================================================*/
+input[type="radio"], input[type="checkbox"] { vertical-align:-2px }
+textarea { resize:none; overflow:auto }
+input { visibility:visible; outline:none }
+/* MARGIN 0
+========================================================================*/
+.mrgLast { margin-right:0 !important }
+.mrgFirst { margin-left:0 !important }
+/* FORM
+========================================================================*/
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+legend { border: 0; *margin-left: -7px;
+padding: 0; white-space: normal; }
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle;
+}
+button, input { line-height: normal; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; *width: 13px;
+*height: 13px;
+}
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button {
+-webkit-appearance: none;
+}
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible;
+}
+button::-moz-focus-inner, input::-moz-focus-inner {
+border: 0;
+padding: 0;
+}
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+/* Chrome Frame Prompt
+========================================================================*/
+.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
+
+
+
+
+/*RS Slider Changed css and here you can add your custom class for saperation.*/
+.rslides { list-style: outside none none; margin: 0; overflow: hidden; padding: 0; position: relative; width: 100%; }
+.rslides ul{padding-left:0;}
+.rslides li { backface-visibility: hidden; display: none; height: 100%; left: 0; position: absolute; top: 0; width: 100%; }
+.rslides li:first-child { display: block; float: left; position: relative; }
+.rslides img { border: 0 none; display: block; float: left; height: auto; width: 100%; }
+.leftside { color: #fff; left: -100%; max-width: 50%; padding: 30px; position: absolute; top: 30%; transition: all 2s ease 0s; width: 100%; }
+.rightside { bottom: -100%; color: #fff; left: 4%; max-width: 50%; padding: 30px; position: absolute; right: 0; -moz-transition: all 2s ease 0s; -o-transition: all 2s ease 0s; -webkit-transition: all 2s ease 0s; transition: all 2s ease 0s; width: 100%; }
+.topimg {  position: absolute; right: 4%; top: 23%; -o-transform: scale(0); -moz-transform: scale(0); -webkit-transform: scale(0); transform: scale(0); -moz-transition: all 2s ease 0s; -o-transition: all 2s ease 0s; -webkit-transition: all 2s ease 0s; transition: all 2s ease 0s; }
+.topimg img { -o-transform: scale(0); -moz-transform: scale(0); -webkit-transform: scale(0); transform: scale(0);}
+.leftside h2 { font-size: 40px; line-height: 42px; }
+.leftside p { font-size: 18px; line-height: 30px; }
+.transparent-btns1_on .leftside { left: 4%; }
+.transparent-btns1_on .rightside { bottom: 27%; }
+.transparent-btns1_on .topimg { -o-transform: scale(1); -moz-transform: scale(1); -webkit-transform: scale(1); transform: scale(1);  }
+.transparent-btns1_on .topimg img {-o-transform: scale(1); -moz-transform: scale(1); -webkit-transform: scale(1); transform: scale(1); }
+.centered-btns_nav { background: transparent url(../images/themes.gif) no-repeat scroll left top; height: 61px; left: 0; margin-top: -45px; opacity: 0.7; overflow: hidden; position: absolute; text-decoration: none; text-indent: -9999px; top: 50%; width: 38px; z-index: 3; }
+.centered-btns_nav:active { opacity: 1; }
+.centered-btns_nav.next { background-position: right top; left: auto; right: 0; }
+.transparent-btns_nav { background: #fff none repeat scroll 0 0; display: block; left: 0; opacity: 0; overflow: hidden; position: absolute; text-indent: -9999px; top: 0; z-index: 3; }
+.transparent-btns_nav.next { left: auto; right: 0; }
+.large-btns_nav { background: #000 url(../images/themes.gif) no-repeat scroll left 50%; bottom: 0; left: 0; opacity: 0.6; overflow: hidden; position: absolute; text-indent: -9999px; top: 0; width: 38px; z-index: 3; }
+.large-btns_nav:active { opacity: 1; }
+.large-btns_nav.next { background-position: right 50%; left: auto; right: 0; }
+.centered-btns_nav:focus, .transparent-btns_nav:focus, .large-btns_nav:focus { outline: medium none; }
+.centered-btns_tabs, .transparent-btns_tabs, .large-btns_tabs { margin: -9% auto 0; position: absolute; text-align: center; width: 100%; z-index: 10; }
+.centered-btns_tabs li, .transparent-btns_tabs li, .large-btns_tabs li { display: inline; float: none; margin-right: 5px; }
+.centered-btns_tabs a, .transparent-btns_tabs a, .large-btns_tabs a { background: rgba(255, 255, 255, 0.2) none repeat scroll 0 0; border-radius: 15px; box-shadow: 0 0 2px 0 rgba(255, 255, 255, 0.3) inset; display: inline-block; height: 15px; overflow: hidden; text-indent: -9999px; width: 15px; }
+.centered-btns_here a, .transparent-btns_here a, .large-btns_here a { background: rgba(255, 255, 255, 0.8) none repeat scroll 0 0; }
+.tp-caption a{border: 1px solid #ffffff; border-radius: 30px; color: #ffffff; padding: 10px 30px; text-shadow: none;}
